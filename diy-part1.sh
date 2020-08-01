@@ -15,3 +15,16 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
+
+./scripts/feeds clean
+./scripts/feeds update -a
+./scripts/feeds install -a
+
+svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns package/net/smartdns
+
+rm -rf package/lean/UnblockNeteaseMusicGo
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusicGo package/lean/UnblockNeteaseMusicGo
+
+rm -rf package/network/services/wireguard
+svn co https://github.com/coolsnowwolf/lede/trunk/package/network/services/wireguard package/network/services/wireguard
