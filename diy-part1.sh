@@ -29,6 +29,8 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMus
 rm -rf package/network/services/wireguard
 svn co https://github.com/coolsnowwolf/lede/trunk/package/network/services/wireguard package/network/services/wireguard
 
+svn co https://github.com/tano-systems/luci-theme-tano/trunk/src/luci-theme-tano feeds/luci/themes/luci-theme-tano
+
 rm -rf package/lean/luci-app-rclone
 rm -rf package/lean/rclone-ng
 rm -rf package/lean/rclone-webui-react
