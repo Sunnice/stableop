@@ -37,3 +37,4 @@ git clone https://github.com/siropboy/luci-theme-btmod.git package/luci-theme-bt
 git clone https://github.com/solidus1983/luci-theme-opentomato.git package/luci-theme-opentomato2
 git clone https://github.com/kenzok8/luci-theme-ifit.git package/luci-theme-ifit
 git clone https://github.com/Aslin-Ameng/luci-theme-Night.git package/luci-theme-Night
+git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/luci-theme-infinityfreedom
