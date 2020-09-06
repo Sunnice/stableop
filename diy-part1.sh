@@ -40,3 +40,6 @@ rm -rf package/lean/luci-app-kodexplorer
 rm -rf feeds/packages/net/https-dns-proxy
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy feeds/packages/net/https-dns-proxy
 
+rm -rf feeds/packages/libs/nss
+svn co https://github.com/Lienol/openwrt-packages/trunk/libs/nss feeds/packages/libs/nss
+
