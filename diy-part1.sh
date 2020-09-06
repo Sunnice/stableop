@@ -43,3 +43,6 @@ svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy feed
 rm -rf feeds/packages/libs/nss
 svn co https://github.com/Lienol/openwrt-packages/trunk/libs/nss feeds/packages/libs/nss
 
+rm rf feeds/packages/libs/nspr
+svn co https://github.com/Lienol/openwrt-packages/trunk/libs/nspr feeds/packages/libs/nspr
+
