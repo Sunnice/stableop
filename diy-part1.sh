@@ -17,12 +17,6 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
 
-./scripts/feeds clean
-./scripts/feeds update -a
-./scripts/feeds install -a
-
-svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns package/net/smartdns
-
 rm -rf package/lean/UnblockNeteaseMusicGo
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusicGo package/lean/UnblockNeteaseMusicGo
 
@@ -36,11 +30,12 @@ rm -rf package/lean/rclone-ng
 rm -rf package/lean/rclone-webui-react
 rm -rf package/lean/rclone
 rm -rf package/lean/luci-app-kodexplorer
-
 rm -rf feeds/packages/net/https-dns-proxy
 rm -rf feeds/packages/libs/nss
 rm -rf feeds/packages/libs/nspr
+
 sed -i '$a src-git https://github.com/Lienol/openwrt-package' feeds.conf.default
+
 ./scripts/feeds clean
 ./scripts/feeds update -a
 ./scripts/feeds install -a
