@@ -38,11 +38,9 @@ rm -rf package/lean/rclone
 rm -rf package/lean/luci-app-kodexplorer
 
 rm -rf feeds/packages/net/https-dns-proxy
-svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy feeds/packages/net/https-dns-proxy
-
 rm -rf feeds/packages/libs/nss
-svn co https://github.com/Lienol/openwrt-packages/trunk/libs/nss feeds/packages/libs/nss
-
 rm -rf feeds/packages/libs/nspr
-svn co https://github.com/Lienol/openwrt-packages/trunk/libs/nspr feeds/packages/libs/nspr
-
+sed -i '$a src-git https://github.com/Lienol/openwrt-package' feeds.conf.default
+./scripts/feeds clean
+./scripts/feeds update -a
+./scripts/feeds install -a
