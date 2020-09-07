@@ -38,6 +38,4 @@ git clone https://github.com/solidus1983/luci-theme-opentomato.git package/luci-
 git clone https://github.com/kenzok8/luci-theme-ifit.git package/luci-theme-ifit
 git clone https://github.com/Aslin-Ameng/luci-theme-Night.git package/luci-theme-Night
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git package/luci-theme-infinityfreedom
-src-git packages2 https://github.com/Lienol/openwrt-packages.git;dev-19.07
-./scripts/feeds update -a
-./scripts/feeds install -a
+
