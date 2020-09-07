@@ -27,6 +27,6 @@ rm -rf package/lean/luci-app-rclone
 rm -rf package/lean/rclone-ng
 rm -rf package/lean/rclone-webui-react
 rm -rf package/lean/rclone
+rm -rf package/lean/luci-app-kodexplorer
 
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks package/lean/microsocks
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2 package/lean/redsocks2
+svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns package/net/smartdns
