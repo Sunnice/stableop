@@ -34,6 +34,8 @@ rm -rf feeds/packages/net/https-dns-proxy
 rm -rf feeds/packages/libs/nss
 rm -rf feeds/packages/libs/nspr
 
+sed -i '$a src-git https://github.com/Lienol/openwrt-packages' feeds.conf.default
+
 ./scripts/feeds clean
 ./scripts/feeds update -a
 ./scripts/feeds install -a
