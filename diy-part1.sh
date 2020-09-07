@@ -39,6 +39,6 @@ rm -rf package/lean/luci-app-kodexplorer
 rm -rf feeds/packages/net/https-dns-proxy
 rm -rf feeds/packages/libs/nss
 
-src-git packages2 https://github.com/Lienol/openwrt-packages.git;dev-19.07
+src-git packages https://github.com/Lienol/openwrt-packages.git;dev-19.07
 ./scripts/feeds update -a
 ./scripts/feeds install -a
