@@ -21,24 +21,9 @@ sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.co
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 
-svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns package/net/smartdns
-
-rm -rf package/lean/UnblockNeteaseMusicGo
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusicGo package/lean/UnblockNeteaseMusicGo
-
-rm -rf package/network/services/wireguard
-svn co https://github.com/coolsnowwolf/lede/trunk/package/network/services/wireguard package/network/services/wireguard
-
 #svn co https://github.com/tano-systems/luci-theme-tano/trunk/src/luci-theme-tano feeds/luci/themes/luci-theme-tano
 
 rm -rf package/lean/luci-app-rclone
 rm -rf package/lean/rclone-ng
 rm -rf package/lean/rclone-webui-react
 rm -rf package/lean/rclone
-rm -rf package/lean/luci-app-kodexplorer
-rm -rf feeds/packages/net/https-dns-proxy
-rm -rf feeds/packages/libs/nss
-
-src-git packages https://github.com/Lienol/openwrt-packages.git;dev-19.07
-./scripts/feeds update -a
-./scripts/feeds install -a
